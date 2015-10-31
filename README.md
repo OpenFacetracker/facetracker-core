@@ -17,6 +17,8 @@ This README would normally document whatever steps are necessary to get facetrac
 
 ![alt text](http://naper.eu/me/images/facetracker.jpg "FT screen")
 
+![alt text](http://nsa38.casimages.com/img/2015/10/31/151031055257844926.png "FT screen")
+
 
 ### How do I get set up? ###
 
