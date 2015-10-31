@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8688C8FB-B9A0-4AF9-8310-608E91F2611D}</ProjectGuid>
+    <RootNamespace>Facetracker</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;E:\facetracker\opencv\build\include;$(OPENCV_DIR)\include;F:\Programming\OpenCV2.0\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\x86\vc11\lib;E:\facetracker\opencv\build\x86\vc11\lib;C:\opencv\build\x86\vc11\lib;E:\facetracker\opencv\build\x86\vc11\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2410d.lib;opencv_contrib2410d.lib;opencv_core2410d.lib;opencv_features2d2410d.lib;opencv_flann2410d.lib;opencv_gpu2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_legacy2410d.lib;opencv_ml2410d.lib;opencv_nonfree2410d.lib;opencv_objdetect2410d.lib;opencv_ocl2410d.lib;opencv_photo2410d.lib;opencv_stitching2410d.lib;opencv_superres2410d.lib;opencv_ts2410d.lib</AdditionalDependencies>
+      <DelayLoadDLLs>opencv_calib3d2410d.dll;opencv_contrib2410d.dll;opencv_core2410d.dll;opencv_features2d2410d.dll;opencv_flann2410d.dll;opencv_gpu2410d.dll;opencv_highgui2410d.dll;opencv_imgproc2410d.dll;opencv_legacy2410d.dll;opencv_ml2410d.dll;opencv_nonfree2410d.dll;opencv_objdetect2410d.dll;opencv_ocl2410d.dll;opencv_photo2410d.dll;opencv_stitching2410d.dll;opencv_superres2410d.dll;opencv_ts2410d.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>.\opencv\build\x64\vc11\bin;.\opencv\build\x64\vc11\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2411d.lib;opencv_contrib2411d.lib;opencv_core2411d.lib;opencv_features2d2411d.lib;opencv_flann2411d.lib;opencv_gpu2411d.lib;opencv_highgui2411d.lib;opencv_imgproc2411d.lib;opencv_legacy2411d.lib;opencv_ml2411d.lib;opencv_nonfree2411d.lib;opencv_objdetect2411d.lib;opencv_photo2411d.lib;opencv_stitching2411d.lib;opencv_superres2411d.lib;opencv_ts2411d.lib;opencv_video2411d.lib;opencv_videostab2411d.lib;ole32.lib;oleaut32.lib</AdditionalDependencies>
+      <DelayLoadDLLs>opencv_calib3d2411d.dll;opencv_contrib2411d.dll;opencv_core2411d.dll;opencv_features2d2411d.dll;opencv_flann2411d.dll;opencv_gpu2411d.dll;opencv_highgui2411d.dll;opencv_imgproc2411d.dll;opencv_legacy2411d.dll;opencv_ml2411d.dll;opencv_nonfree2411d.dll;opencv_objdetect2411d.dll;opencv_photo2411d.dll;opencv_stitching2411d.dll;opencv_superres2411d.dll;opencv_ts2411d.dll;opencv_video2411d.dll;opencv_videostab2411d.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\color.h" />
+    <ClInclude Include="Header\ft.h" />
+    <ClInclude Include="Header\ft_draw.h" />
+    <ClInclude Include="Header\Image.h" />
+    <ClInclude Include="Header\secure.h" />
+    <ClInclude Include="Header\XmlParsing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera\ft_detect.cpp" />
+    <ClCompile Include="Camera\ft_draw.cpp" />
+    <ClCompile Include="Console\ft_console.cpp" />
+    <ClCompile Include="Utils\ft_config.cpp" />
+    <ClCompile Include="Utils\ft_log.cpp" />
+    <ClCompile Include="Utils\ft_main.cpp" />
+    <ClCompile Include="Utils\ft_parser.cpp" />
+    <ClCompile Include="Utils\ft_secure.cpp" />
+    <ClCompile Include="Utils\ft_utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

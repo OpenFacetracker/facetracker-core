@@ -1,0 +1,111 @@
+﻿La génération a démarré 09/04/2015 11:37:23.
+     1>Projet "E:\facetracker\Facetracker.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\opencv\build\include /IE:\facetracker\opencv\build\include /I\include /IF:\Programming\OpenCV2.0\include\opencv /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Camera\ft_detect.cpp Camera\ft_draw.cpp Console\ft_console.cpp Utils\ft_config.cpp Utils\ft_log.cpp Utils\ft_main.cpp Utils\ft_parser.cpp Utils\ft_utils.cpp
+         ft_detect.cpp
+     1>e:\facetracker\camera\ft_detect.cpp(36): warning C4101: 'id' : variable locale non référencée
+     1>e:\facetracker\camera\ft_detect.cpp(35): warning C4101: 's' : variable locale non référencée
+     1>e:\facetracker\camera\ft_detect.cpp(107): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+     1>e:\facetracker\camera\ft_detect.cpp(118): warning C4101: 'result' : variable locale non référencée
+     1>e:\facetracker\camera\ft_detect.cpp(117): warning C4101: 'out' : variable locale non référencée
+     1>e:\facetracker\camera\ft_detect.cpp(333): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_detect.cpp(386): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_detect.cpp(448): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : voir la déclaration de 'itoa'
+         Génération de code en cours...
+     1>e:\facetracker\camera\ft_detect.cpp(158): warning C4715: 'ft::Camera::getStream' : les chemins de contrôle ne retournent pas tous une valeur
+         Compilation en cours...
+         ft_utils.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+         ft_parser.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+     1>e:\facetracker\utils\ft_parser.cpp(214): warning C4101: 'i' : variable locale non référencée
+         ft_main.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+     1>e:\facetracker\utils\ft_main.cpp(19): warning C4101: 'i' : variable locale non référencée
+         ft_log.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+         ft_config.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+     1>e:\facetracker\utils\ft_config.cpp(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : voir la déclaration de 'strcpy'
+     1>e:\facetracker\utils\ft_config.cpp(36): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : voir la déclaration de 'strtok'
+     1>e:\facetracker\utils\ft_config.cpp(41): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : voir la déclaration de 'strtok'
+     1>e:\facetracker\utils\ft_config.cpp(48): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : voir la déclaration de 'strcpy'
+     1>e:\facetracker\utils\ft_config.cpp(22): warning C4101: 'i' : variable locale non référencée
+     1>e:\facetracker\utils\ft_config.cpp(58): warning C4101: 'stat' : variable locale non référencée
+     1>e:\facetracker\utils\ft_config.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : voir la déclaration de 'strcpy'
+         ft_console.cpp
+     1>e:\facetracker\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : voir la déclaration de 'fopen'
+         ft_draw.cpp
+     1>e:\facetracker\camera\ft_draw.cpp(31): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(163): warning C4244: '=' : conversion de 'double' en 'uchar', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(178): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(189): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(192): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(246): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(249): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(252): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(255): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(258): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(270): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(272): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(273): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(280): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(282): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(283): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(290): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(292): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(293): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(300): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(302): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(303): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+     1>e:\facetracker\camera\ft_draw.cpp(321): warning C4018: '<' : incompatibilité signed/unsigned
+         Génération de code en cours...
+     1>e:\facetracker\camera\ft_draw.cpp(240): warning C4715: 'cu::Draw::ftCheck' : les chemins de contrôle ne retournent pas tous une valeur
+     1>e:\facetracker\camera\ft_draw.cpp(329): warning C4715: 'cu::Utils::cmd' : les chemins de contrôle ne retournent pas tous une valeur
+     1>e:\facetracker\utils\ft_config.cpp(79): warning C4715: 'ft::Config::getElem' : les chemins de contrôle ne retournent pas tous une valeur
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\facetracker\Debug\Facetracker.exe" /INCREMENTAL /NOLOGO /LIBPATH:\x86\vc11\lib /LIBPATH:E:\facetracker\opencv\build\x86\vc11\lib /LIBPATH:C:\opencv\build\x86\vc11\lib /LIBPATH:E:\facetracker\opencv\build\x86\vc11\bin opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_nonfree2410d.lib opencv_objdetect2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_ts2410d.lib Delayimp.lib /DELAYLOAD:opencv_calib3d2410d.dll /DELAYLOAD:opencv_contrib2410d.dll /DELAYLOAD:opencv_core2410d.dll /DELAYLOAD:opencv_features2d2410d.dll /DELAYLOAD:opencv_flann2410d.dll /DELAYLOAD:opencv_gpu2410d.dll /DELAYLOAD:opencv_highgui2410d.dll /DELAYLOAD:opencv_imgproc2410d.dll /DELAYLOAD:opencv_legacy2410d.dll /DELAYLOAD:opencv_ml2410d.dll /DELAYLOAD:opencv_nonfree2410d.dll /DELAYLOAD:opencv_objdetect2410d.dll /DELAYLOAD:opencv_ocl2410d.dll /DELAYLOAD:opencv_photo2410d.dll /DELAYLOAD:opencv_stitching2410d.dll /DELAYLOAD:opencv_superres2410d.dll /DELAYLOAD:opencv_ts2410d.dll /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\facetracker\Debug\Facetracker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\facetracker\Debug\Facetracker.lib" /MACHINE:X86 Debug\ft_detect.obj
+         Debug\ft_draw.obj
+         Debug\ft_console.obj
+         Debug\ft_config.obj
+         Debug\ft_log.obj
+         Debug\ft_main.obj
+         Debug\ft_parser.obj
+         Debug\ft_secure.obj
+         Debug\ft_utils.obj
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_calib3d2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_calib3d2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_contrib2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_contrib2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_features2d2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_features2d2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_flann2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_flann2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_gpu2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_gpu2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_legacy2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_legacy2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_ml2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_ml2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_nonfree2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_nonfree2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_ocl2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_ocl2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_photo2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_photo2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_stitching2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_stitching2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_superres2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_superres2410d.dll
+     1>LINK : warning LNK4199: /DELAYLOAD:opencv_ts2410d.dll ignorÚá; aucune importation trouvÚe Ó partir de opencv_ts2410d.dll
+     1>ft_detect.obj : error LNK2019: symbole externe non rÚsolu __imp__CoUninitialize@0 rÚfÚrencÚ dans la fonction "public: void __thiscall ft::Camera::listCamera(void)" (?listCamera@Camera@ft@@QAEXXZ)
+     1>ft_detect.obj : error LNK2019: symbole externe non rÚsolu __imp__CoInitializeEx@8 rÚfÚrencÚ dans la fonction "public: void __thiscall ft::Camera::listCamera(void)" (?listCamera@Camera@ft@@QAEXXZ)
+     1>ft_detect.obj : error LNK2019: symbole externe non rÚsolu __imp__CoCreateInstance@20 rÚfÚrencÚ dans la fonction "private: long __thiscall ft::Camera::EnumerateDevices(struct _GUID const &,struct IEnumMoniker * *)" (?EnumerateDevices@Camera@ft@@AAEJABU_GUID@@PAPAUIEnumMoniker@@@Z)
+     1>ft_detect.obj : error LNK2019: symbole externe non rÚsolu __imp__VariantInit@4 rÚfÚrencÚ dans la fonction "private: void __thiscall ft::Camera::DisplayDeviceInformation(struct IEnumMoniker *)" (?DisplayDeviceInformation@Camera@ft@@AAEXPAUIEnumMoniker@@@Z)
+     1>ft_detect.obj : error LNK2019: symbole externe non rÚsolu __imp__VariantClear@4 rÚfÚrencÚ dans la fonction "private: void __thiscall ft::Camera::DisplayDeviceInformation(struct IEnumMoniker *)" (?DisplayDeviceInformation@Camera@ft@@AAEXPAUIEnumMoniker@@@Z)
+     1>E:\facetracker\Debug\Facetracker.exe : fatal error LNK1120: 5 externes non rÚsolus
+     1>Génération du projet "E:\facetracker\Facetracker.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:14.63
