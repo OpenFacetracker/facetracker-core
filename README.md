@@ -51,15 +51,15 @@ then execute it using
 #Linux ( Adding Options)
 You can compile facetracker using different Options . 
 
-* -DFT_USE_COLOR  	= Enable color output
-* -DFT_DEBUG_ENABLED 	= Enable Debug mode
-* -DFT_ALLOW_EXCEPT	= Enable exceptions
-* -DFT_WINCAM_LIST 	= Enable camera listing for Windows
-* -DFT_TEST_PERFORMANCE = Enable performance testing
-* -DFT_NO_UI		= Disable graphique check
-* -DFT_FORM		= Enable output for FORM detection
-* -DFT_TEST_RECOGNISE	= Enable recognition
-* -DFT_OPTIMISATION	= Enable optimisation
+* <b>-DFT_USE_COLOR</b>  	= Enable color output
+* <b>-DFT_DEBUG_ENABLED</b> 	= Enable Debug mode
+* <b>-DFT_ALLOW_EXCEPT</b>	= Enable exceptions
+* <b>-DFT_WINCAM_LIST</b> 	= Enable camera listing for Windows
+* <b>-DFT_TEST_PERFORMANCE</b> = Enable performance testing
+* <b>-DFT_NO_UI</b>		= Disable graphique check
+* <b>-DFT_FORM</b>		= Enable output for FORM detection
+* <b>-DFT_TEST_RECOGNISE</b>	= Enable recognition
+* <b>-DFT_OPTIMISATION</b>	= Enable optimisation
 
 #Windows (facetracker core)
 
