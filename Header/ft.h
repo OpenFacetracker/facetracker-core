@@ -1,5 +1,5 @@
 /*
- * Facetracker 
+ * Facetracker
  * @authors : Hamza & Godeleine & Quentin
  *
 */
@@ -10,12 +10,28 @@
 #include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
-#include <opencv/cv.h>  
-#include <opencv/highgui.h>  
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
 #include "ft_draw.h"
+
+/* add some facetracker options
+============================== */
+
+#define FT_TEST_RECOGNISE 1
+
+/*
+============================== */
 
 #ifdef FT_ALLOW_EXCEPT
  	#include <stdexcept>
+#endif
+
+#ifdef FT_GUI_QT
+    #define FT_USE_COLOR        1
+    #define FT_DEBUG_ENABLED    1
+    #define FT_FORM             1
+    #define FT_TEST_RECOGNISE   1
+    #define FT_OPTIMISATION     1
 #endif
 
 #ifdef _WIN32
@@ -45,7 +61,7 @@
 #define VERSION 	"0.0.1"
 #define CONFIG 		"Config/ft.conf"
 
-/* OPTION FOR WRITE FUNCTION */ 
+/* OPTION FOR WRITE FUNCTION */
 
 #define INLINE 		1
 #define FORMAT 		2
@@ -84,7 +100,7 @@ namespace ft{
 			void init_color();
 		private:
 			void color(int font_color, int back_color);
-			
+
 	};
 	class Config{
 		public:
@@ -125,14 +141,14 @@ namespace ft{
 			void listCamera();
 		private:
 			void SaveImage(char *filename, IplImage *img, int *Compteur);
-			int detectFaces(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage, int *Compteur);
-			int detectEyes(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
-			int detectMouth(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
-			int detectNoze(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
-			int detectSmile(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
+      IplImage * detectFaces(IplImage *img, IplImage *newframe, CvHaarClassifierCascade * cascade, CvMemStorage *storage, int *Compteur);
+      int detectEyes(IplImage *img, IplImage *newframe, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
+      int detectMouth(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
+      int detectNoze(IplImage *img,IplImage *newframe, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
+      int detectSmile(IplImage *img, CvHaarClassifierCascade * cascade, CvMemStorage *storage);
 			void ViolaJones(CvHaarClassifierCascade * cascade, CvMemStorage *storage, char KeyStop, char * stream);
 			CvCapture * getStream(char * stream);
-			void Recognise();
+			void testRecognise();
 			void parse_csv(const string& filename, vector<Mat>& images, vector<int>& labels);
 		#ifdef _WIN32
 			void DisplayDeviceInformation(IEnumMoniker *pEnum);
