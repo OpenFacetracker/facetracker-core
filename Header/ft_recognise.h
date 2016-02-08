@@ -28,6 +28,10 @@
     #define PATH_DB             "DB/images.ext"
 #endif
 
+#ifdef __APPLE__
+	#define PATH_DB             "DB/images.ext"
+#endif
+
 #define UNKNOWN			-1
 #define MATCHING		-2
 #define RECOGNIZED		 1

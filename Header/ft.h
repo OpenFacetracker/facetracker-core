@@ -43,6 +43,12 @@
 	#define FT_NO_UI		1
 #endif
 
+#ifdef __APPLE__
+	#define FT_DEBUG_ENABLED	0
+	#define FT_USE_COLOR		1
+	#define FT_NO_UI		1
+#endif
+
 #ifdef FT_USE_COLOR				/* if we wanna use color.h */
 	#include "color.h"
 #endif

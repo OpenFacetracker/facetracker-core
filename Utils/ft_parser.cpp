@@ -5,7 +5,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#ifdef linux
+#if defined(linux) || defined(__APPLE__)
 	#include <getopt.h>
 #endif
 #ifdef _WIN32
@@ -24,7 +24,7 @@ char	*optarg;
 int		optind = 0;
 
 void Parser::parse(int argc, char ** argv){
-#ifdef linux
+#if defined(linux) || defined(__APPLE__)
   int c;
   Console *console = new Console;
   Config  *config  = new Config;
@@ -83,12 +83,16 @@ void Parser::parse(int argc, char ** argv){
 
         	case 'o':
           		/* open camera for test */
+			#ifdef __APPLE__
+				camera->cOpen(argv[2]);
+			#else
 				DEBUGP ("test");
         		if(!optarg){
         			std::cout << FT_ERROR << "please give a valid camera name" << std::endl;
         		}else{
         			camera->cOpen(optarg);
-        		}	
+        		}
+            #endif
           		break;
 
         	case 'x':
@@ -140,7 +144,7 @@ void Parser::parse(int argc, char ** argv){
 #endif
 #ifdef _WIN32
 	this->win32parse(argc, argv);
-#endif 
+#endif
 	return ;
 }
 void Parser::win32parse(int argc, char ** argv){
@@ -207,7 +211,7 @@ void Parser::win32parse(int argc, char ** argv){
 	delete utils;
 }
 int Parser::win32getopt(int argc, char ** argv, char *optstring){
-#ifdef _WIN32
+#if defined(_WIN32)
 	static char *next = NULL;
 	char c;
 	char *cp;
