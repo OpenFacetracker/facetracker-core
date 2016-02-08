@@ -65,6 +65,10 @@ You can compile facetracker using different Options .
 * <b>-DFT_TEST_RECOGNISE</b>	= Enable recognition
 * <b>-DFT_OPTIMISATION</b>	= Enable optimisation
 
+#MAC OSX (facetracker core)
+The project was done using Clion , just open the project using Clion on MAC OSX .
+The file <b>CmakeLists.txt</b> is available .
+
 #Windows (facetracker core)
 
 Open the <b>.sln</b> file using Visual Studio
