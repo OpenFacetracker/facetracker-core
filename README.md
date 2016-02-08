@@ -46,7 +46,7 @@ making the project :
 
 to compile all facetracker modules : 
 
-	$ make ftall
+	$ make compil
 	
 then execute it using
 
