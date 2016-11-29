@@ -42,7 +42,7 @@ making the project :
 	**************************************
 	*  Facetracker Building    *
 	**************************************
-	make ftall		: Build facetracker
+	make compil		: Build facetracker
 	make memleaks		: Check memory leaks
 
 to compile all facetracker modules : 
